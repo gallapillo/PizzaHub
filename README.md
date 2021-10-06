@@ -1,1 +1,1 @@
-"# Pizza hub - Kotlin MVVM App" 
+# Pizza hub - Kotlin MVVM App
