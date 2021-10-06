@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ImageView
+    android:id="@+id/pizza_image_view"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    tools:src="@drawable/pizza"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="12dp"
+    />
+    <TextView
+        android:id="@+id/pizza_text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Pizza Cheeseburger"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_image_view"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        android:fontFamily="@font/proximanova_black"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/pizza_text_view_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/proximanova_black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_text_view_name"
+        tools:text="300 $" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_login_register"
+        android:fontFamily="@font/proximanova_regular"
+        android:text="add to cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_text_view_price" />
+</androidx.constraintlayout.widget.ConstraintLayout>

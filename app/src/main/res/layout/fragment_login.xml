@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_blank_login">
+        <TextView
+            android:id="@+id/fragment_login_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:fontFamily="@font/proximanova_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.401" />
+
+        <EditText
+            android:id="@+id/fragment_login_login_input"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_login_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="18dp"
+            android:paddingStart="12dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:paddingEnd="12dp"
+            android:textColor="@color/white"
+            android:hint="Login"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_login_label"/>
+
+        <EditText
+            android:id="@+id/fragment_login_password_input"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_login_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="18dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Password"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_login_login_input"/>
+
+        <Button
+            android:id="@+id/btn_login_submit"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_login_register"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proximanova_regular"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_login_password_input" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:background="@drawable/bg_login_register"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_login_password_input" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
